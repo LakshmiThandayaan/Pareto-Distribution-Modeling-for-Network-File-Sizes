@@ -9,28 +9,28 @@ The task was to analyze a random sample of 1000 file sizes, determine the approp
 
 ### Action
 
-1.Data Analysis:
+**1.Data Analysis:**
 
 * A random sample of 1000 file sizes (in kB) was taken. 
 * Summary statistics such as the mean, standard deviation, median, and quantiles were computed.
 * A histogram was generated to visually inspect the distribution, which showed a positively skewed distribution with a heavy tail.
 
-2. Modeling with Pareto Distribution:
+**2.Modeling with Pareto Distribution:**
 
 * Recognizing the characteristics of the Pareto distribution (positive skewness and heavy tail), a Pareto model was selected to describe the data.
 * The probability density function of the Pareto distribution was defined, with a minimum file size ($𝑥_𝑚$) of 1000 kB.
 
-3. Estimation of Parameter $\alpha$:
+**3.Estimation of Parameter $\alpha$:**
 
 * The parameter $\alpha$ was estimated using the maximum likelihood estimation (MLE) method, resulting in $𝛼 = 2.793$.
 * The Fisher Information for $\alpha$ was calculated to be 128.18, which was used to derive the standard error and confidence intervals.
 
-4. Simulation and Analysis:
+**4.Simulation and Analysis:**
 
 * Using the estimated parameters, a simulation of 1000 samples from the Pareto distribution was conducted to estimate and analyze the distribution of the sample mean.
 * The histogram of the sample mean was generated, showing convergence to a normal distribution as expected for large samples.
 
-5. Setting Upper Limit:
+**5.Setting Upper Limit:**
 
 * Based on the analysis, it was determined that setting an upper limit of 5201 kB would ensure that 99% of the file sizes are accepted by the network.
 
